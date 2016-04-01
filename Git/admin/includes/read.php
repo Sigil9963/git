@@ -39,4 +39,18 @@
 		}
 		
 	}
+
+	function getNews($tbl) {
+		include('connect.php');
+		$queryNews = "SELECT * FROM {$tbl} ORDER BY news_id DESC LIMIT 3"; //Set limit to however many stories you want to show at once.
+		//echo $queryNews;
+		$runNews = mysqli_query($link, $queryNews);
+		
+		if($runNews){
+			return $runNews;	
+		}else{
+			$error =  "There was an error accessing this information.  Please contact your admin.";
+			return $error;
+		}
+	}
 ?>
