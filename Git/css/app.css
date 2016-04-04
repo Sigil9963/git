@@ -71,3 +71,27 @@ ul li a{
 	z-index:99;
 	display:block;
 }
+
+.newtile{
+	display:inline;	
+	padding:10px;
+	margin-bottom:30px;
+}
+
+.newtile:hover{
+	background:#CCC;
+}
+
+.newtile img{
+	margin-left:50%;
+	transform:translate(-50%);
+}
+
+.newtile h2, p{
+	text-align:center;
+	border-bottom:1px solid #000;
+}
+
+.newtile a{
+	color:#000;
+}

@@ -42,7 +42,7 @@
 
 	function getLatest($tblL) {
 		include('connect.php');
-		$queryNews = "SELECT * FROM {$tbl} ORDER BY movies_id DESC LIMIT 3"; //Set limit to however many stories you want to show at once.
+		$queryNews = "SELECT * FROM {$tblL} ORDER BY movies_id DESC LIMIT 4"; //Set limit to however many stories you want to show at once.
 		//echo $queryNews;
 		$runNews = mysqli_query($link, $queryNews);
 		

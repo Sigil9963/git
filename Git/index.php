@@ -38,7 +38,7 @@
 <?php
 
 	include('includes/nav.html');
-	
+	echo"<div id=\"new\" class=\"row\">";
 	if(!is_string($getNews)){				
 				//These are the basic blocks, replace your URL, Image links, and titles with these where appropriate. Echo a single tile, loop repeats until page is populated.
 			
@@ -47,17 +47,17 @@
 					//echo "{$row['news_link']}<br>";
 					//echo "{$row['news_img']}<br>";				
 			
-        		echo"<div class=\"small-12 medium-6 large-4 columns newspic news\">            
-					  <a href=\"{$row['news_link']}\"><img src=\"images/{$row['news_img']}\" alt=\"newImages\" class=\"newsImage\"></a>           
-						<a href=\"{$row['news_link']}\">
-						 <h3>{$row['news_title']}</h3>
-						 <p class=\"date\">{$row['news_date']}</p>
-						</a>
-					</div>";         
+        		echo"<a href=\"details.php?id={$row['movies_id']}\">
+				  <div class=\"newtile small-12 large-3 columns\">
+				 <h2>{$row['movies_title']}</h2>
+				 <img src=\"images/{$row['movies_thumb']}\" alt=\"{$row['movies_title']}\">				 
+				 <p>{$row['movies_year']}</p>
+				 </div>	
+				 </a>";         
 					}				
 			}
         
-	
+	echo"</div>";
 	if(!is_string($getMovies)){
 		while($row = mysqli_fetch_array($getMovies)){
 			echo"<a href=\"details.php?id={$row['movies_id']}\">
