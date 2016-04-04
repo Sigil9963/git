@@ -1,0 +1,73 @@
+//CSS Document
+
+body{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#mainheader h2{
+	text-align:center;
+	margin-top:20px;
+}
+
+#mainheader{
+	border-bottom:2px solid #000;
+	margin-bottom:25px;
+}
+
+ul li{
+	list-style:none;
+	display:inline;
+	
+}
+
+ul li a{
+	color:#000;
+}
+
+.movietile{
+	display:inline;	
+	padding:10px;
+}
+
+.movietile:hover{
+	background:#CCC;
+}
+
+.movietile img{
+	margin-left:50%;
+	transform:translate(-50%);
+}
+
+.movietile h2, p{
+	text-align:center;
+	border-bottom:1px solid #000;
+}
+
+.movietile a{
+	color:#000;
+}
+
+#footer div{
+	margin-top:50px;
+}
+
+#detdesc h2{
+	text-align:center;
+}
+
+.srchtitle{
+	font-size:16px;
+}
+
+.srchthumb{
+	float:left;
+}
+
+#livesrch{
+	position:absolute;
+	background-color:#fff;
+	padding:15px;
+	border:1px solid #000;
+	z-index:99;
+	display:block;
+}
