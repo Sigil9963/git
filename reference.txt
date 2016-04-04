@@ -1,9 +1,0 @@
-http://php.net/manual/en/function.date.php
-
-http://stackoverflow.net/questions/6158726/php-compare-time
-
-http://stackoverflow.net/questions/4702852/php-testing-wether-three-variables-are-equal
-
-http://php.net/manual/en/function.str-shuffle.php
-
-dlbhaergkbj ev
