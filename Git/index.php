@@ -38,7 +38,8 @@
 <?php
 
 	include('includes/nav.html');
-	echo"<div id=\"new\" class=\"row\">";
+	echo"<div id=\"new\" class=\"row\">
+		<h3 id=\"newheader\">New Releases</h3>";
 	if(!is_string($getNews)){				
 				//These are the basic blocks, replace your URL, Image links, and titles with these where appropriate. Echo a single tile, loop repeats until page is populated.
 			
@@ -53,7 +54,14 @@
 				 <img src=\"images/{$row['movies_thumb']}\" alt=\"{$row['movies_title']}\">				 
 				 <p>{$row['movies_year']}</p>
 				 </div>	
-				 </a>";         
+				 </a>";
+				 
+				 echo"<ul class=\"clearing-thumbs small-block-grid-2 medium-block-grid-4\" data-clearing>
+            	<li>
+                	<a href=\"images/$row['movies_thumb']}\">
+                    	<img data-caption=\"$row['movies_title']}\" src=\"$row['movies_thumb']}\" alt=\"$row['movies_title']}\">
+					</a>
+                </li>";        
 					}				
 			}
         
