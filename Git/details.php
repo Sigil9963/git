@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="css/foundation.css" />
 <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body id="main">
 <?php
 	include('includes/nav.html');
 	

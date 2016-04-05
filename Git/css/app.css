@@ -2,6 +2,17 @@
 
 body{
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+	color:#CCC;
+}
+
+p, a, h2, h3, h1{
+	color:#CCC;
+}
+
+#main{
+	background:#222;
+	color:#CCC;
 }
 
 #mainheader h2{
@@ -10,7 +21,7 @@ body{
 }
 
 #mainheader{
-	border-bottom:2px solid #222;
+	border-bottom:2px solid #CCC;
 	margin-bottom:25px;
 }
 
@@ -21,7 +32,7 @@ ul li{
 }
 
 ul li a{
-	color:#222;
+	color:#CCC;
 }
 
 .movietile{
@@ -40,11 +51,11 @@ ul li a{
 
 .movietile h2, p{
 	text-align:center;
-	border-bottom:1px solid #222;
+	border-bottom:1px solid #CCC;
 }
 
 .movietile a{
-	color:#222;
+	color:#CCC;
 }
 
 #footer div{
@@ -67,7 +78,7 @@ ul li a{
 	position:absolute;
 	background-color:#fff;
 	padding:15px;
-	border:1px solid #222;
+	border:1px solid #CCC;
 	z-index:99;
 	display:block;
 }
@@ -89,9 +100,9 @@ ul li a{
 
 .newtile h2, p{
 	text-align:center;
-	border-bottom:1px solid #222;
+	border-bottom:1px solid #CCC;
 }
 
 .newtile a{
-	color:#222;
+	color:#CCC;
 }

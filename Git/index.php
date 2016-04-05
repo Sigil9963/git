@@ -34,11 +34,13 @@
 <link rel="stylesheet" href="css/foundation.css" />
 <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body id="main">
 <?php
 
 	include('includes/nav.html');
-	echo"<div id=\"new\" class=\"row\">";
+	echo"<div id=\"new\" class=\"row\">
+	<h3>New Releases</h3>";
+	
 	if(!is_string($getNews)){				
 				//These are the basic blocks, replace your URL, Image links, and titles with these where appropriate. Echo a single tile, loop repeats until page is populated.
 			
