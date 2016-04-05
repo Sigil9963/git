@@ -10,7 +10,7 @@ body{
 }
 
 #mainheader{
-	border-bottom:2px solid #000;
+	border-bottom:2px solid #222;
 	margin-bottom:25px;
 }
 
@@ -21,7 +21,7 @@ ul li{
 }
 
 ul li a{
-	color:#000;
+	color:#222;
 }
 
 .movietile{
@@ -40,11 +40,11 @@ ul li a{
 
 .movietile h2, p{
 	text-align:center;
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #222;
 }
 
 .movietile a{
-	color:#000;
+	color:#222;
 }
 
 #footer div{
@@ -67,7 +67,7 @@ ul li a{
 	position:absolute;
 	background-color:#fff;
 	padding:15px;
-	border:1px solid #000;
+	border:1px solid #222;
 	z-index:99;
 	display:block;
 }
@@ -89,9 +89,9 @@ ul li a{
 
 .newtile h2, p{
 	text-align:center;
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #222;
 }
 
 .newtile a{
-	color:#000;
+	color:#222;
 }
