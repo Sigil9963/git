@@ -40,29 +40,18 @@
 	include('includes/nav.html');
 	echo"<div id=\"new\" class=\"row\">
 		<h3 id=\"newheader\">New Releases</h3>";
-	if(!is_string($getNews)){				
-				//These are the basic blocks, replace your URL, Image links, and titles with these where appropriate. Echo a single tile, loop repeats until page is populated.
-			
-				while($row = mysqli_fetch_array($getNews)){
-					//echo "{$row['news_title']}<br>";
-					//echo "{$row['news_link']}<br>";
-					//echo "{$row['news_img']}<br>";				
-			
-        		echo"<a href=\"details.php?id={$row['movies_id']}\">
-				  <div class=\"newtile small-12 large-3 columns\">
-				 <h2>{$row['movies_title']}</h2>
-				 <img src=\"images/{$row['movies_thumb']}\" alt=\"{$row['movies_title']}\">				 
-				 <p>{$row['movies_year']}</p>
-				 </div>	
-				 </a>";
-				 
-				 echo"<ul class=\"clearing-thumbs small-block-grid-2 medium-block-grid-4\" data-clearing>
-            	<li>
-                	<a href=\"images/$row['movies_thumb']}\">
-                    	<img data-caption=\"$row['movies_title']}\" src=\"$row['movies_thumb']}\" alt=\"$row['movies_title']}\">
+		
+	if(!is_string($getNews)){
+			echo"<ul class=\"clearing-thumbs small-block-grid-2 medium-block-grid-4\" data-clearing>";	
+				while($row = mysqli_fetch_array($getNews)){			
+				echo"<li>
+                	<a href=\"images/{$row['movies_thumb']}\">
+                    	<img data-caption=\"{$row['movies_title']}\" src=\"images/{$row['movies_thumb']}\" alt=\"{$row['movies_title']}\">
 					</a>
-                </li>";        
-					}				
+                </li>";
+                        
+				}	
+			echo"</ul>";				
 			}
         
 	echo"</div>";
